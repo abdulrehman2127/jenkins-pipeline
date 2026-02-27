@@ -15,11 +15,7 @@ spec:
       spec:
         containers:
           - name: my-store-container
-<<<<<<< HEAD
             image: abdulrehmanabid/jenkins-pipeline/
-=======
-            image: abdulrehmanabid/jenkins-pipeline:build-8
->>>>>>> 5f94dcedd099ca53b9ec075bd0d1a94cf5dd5bb3
             ports:
               - containerPort: 5000
               
