@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-store
+  namespace: default
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: my-store
+    template:
+      metadata:
+        labels:
+          app: my-store
+      spec:
+        containers:
+          - name: my-store-container
+            image: abdulrehmanabid/jenkins-pipeline:latest
+            ports:
+              - containerPort: 5000
+              
