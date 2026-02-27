@@ -4,7 +4,7 @@ pipeline {
         disableConcurrentBuilds()
     }
     environment {
-        IMAGE_NAME = 'abdulrehmanabid/jenkins-pipeline:latest'
+        IMAGE_NAME = 'abdulrehmanabid/jenkins-pipeline'
         GIT_USER = 'abdulrehman2127'
         GIT_EMAIL = 'abdulrehmanabid2127@gmail.com'
     }
