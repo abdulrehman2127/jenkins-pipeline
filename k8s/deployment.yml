@@ -8,14 +8,14 @@ spec:
   selector:
     matchLabels:
       app: my-store
-    template:
+  template:
       metadata:
         labels:
           app: my-store
       spec:
         containers:
           - name: my-store-container
-            image: abdulrehmanabid/jenkins-pipeline
+            image: abdulrehmanabid/jenkins-pipeline/
             ports:
               - containerPort: 5000
               
