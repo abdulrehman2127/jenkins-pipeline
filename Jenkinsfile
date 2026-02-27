@@ -56,8 +56,8 @@ pipeline {
                             git reset --hard origin/main
                             sed -i "s|image:.*|image: ${IMAGE_NAME}:${IMAGE_TAG}|g" k8s/deployment.yml
                             git add k8s/deployment.yml
-                            git diff --cached --quiet || (git commit -m "Update deployment image to ${IMAGE_NAME}:${IMAGE_TAG}" && git push origin main)
-
+                            git diff --cached --quiet || (git commit -m "Update deployment image to ${IMAGE_NAME}:${IMAGE_TAG}")
+                            git push https://${GIT_USER}:${GIT_TOKEN}@github.com/abdulrehman2127/jenkins-pipeline.git main
                         """
                     }
                 }
