@@ -15,9 +15,9 @@ spec:
       spec:
         containers:
           - name: my-store-container
-            image: abdulrehmanabid/jenkins-pipeline:BUILD_TAG
+            image: abdulrehmanabid/jenkins-pipeline:build-11
 
-            image: abdulrehmanabid/jenkins-pipeline:build-10
+            image: abdulrehmanabid/jenkins-pipeline:build-11
 
             ports:
               - containerPort: 5000
